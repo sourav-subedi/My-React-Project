@@ -110,7 +110,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 Sourav Subedi - souravsubedi09@gmail.com
-Project Link: [https://github.com/yourusername/movie_application]
+Project Link: [(https://github.com/sourav-subedi/My-React-Project.git)]
 
 ---
 ⭐️ Star this repo if you find it helpful!
