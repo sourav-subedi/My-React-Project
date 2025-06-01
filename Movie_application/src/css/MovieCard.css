@@ -1,0 +1,131 @@
+.movie-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--secondary-blue);
+    transition: transform 0.2s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--primary-gold);
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+  }
+  
+  .movie-poster {
+    position: relative;
+    aspect-ratio: 2/3;
+    width: 100%;
+  }
+  
+  .movie-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .movie-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(26, 35, 126, 0.1),
+      rgba(26, 35, 126, 0.9)
+    );
+    opacity: 0;
+    transition: opacity 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+  
+  .movie-card:hover .movie-overlay {
+    opacity: 1;
+  }
+  
+  .favorite-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--primary-gold);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color: rgba(26, 35, 126, 0.7);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    border: 1px solid var(--primary-gold);
+  }
+  
+  .favorite-btn:hover {
+    background-color: var(--primary-gold);
+    color: var(--primary-blue);
+  }
+  
+  .favorite-btn.active {
+    color: var(--primary-gold);
+    background-color: var(--primary-blue);
+  }
+  
+  .rating-select {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  
+  .movie-info {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--primary-gold);
+  }
+  
+  .movie-info h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: var(--primary-gold);
+  }
+  
+  .movie-info p {
+    color: var(--accent-gold);
+    font-size: 0.9rem;
+  }
+  
+  .user-rating {
+    color: #ffd700;
+    font-size: 0.9rem;
+    margin-top: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .movie-card {
+      font-size: 0.9rem;
+    }
+  
+    .movie-info {
+      padding: 0.75rem;
+    }
+  
+    .favorite-btn {
+      width: 32px;
+      height: 32px;
+      font-size: 1.2rem;
+    }
+  }
