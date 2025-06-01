@@ -31,7 +31,7 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository:
 ```bash
-git clone [your-repository-url]
+git clone sourav-subedi/My-React-Project
 cd movie_application
 ```
 
@@ -44,7 +44,7 @@ yarn install
 
 3. Create a `.env` file in the root directory and add your TMDB API key:
 ```env
-VITE_TMDB_API_KEY=your_api_key_here
+VITE_TMDB_API_KEY=e452146c4f195587f77d397e677e2c21
 ```
 
 4. Start the development server:
@@ -109,7 +109,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Your Name - [your-email@example.com]
+Sourav Subedi - souravsubedi09@gmail.com
 Project Link: [https://github.com/yourusername/movie_application]
 
 ---
